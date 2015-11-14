@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quote Machine</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Sigmar+One|Poiret+One|Special+Elite' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/base.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+	<div id="wrap">
+		<div id="top">
+			<h1 id="title">Random Famous Quotes</h1>
+			<p id="sub-title">The quotes below are pulled from an <a href="https://market.mashape.com/andruxnet/random-famous-quotes" title="Random Famous Quotes" target="_blank">API</a> that I implemented using Ajax calls via jQuery. <br />Please be gentle with requests as there is a limit to them per hour.</p>
+		</div>
+		<div id="actions">
+			<button id="show">Show Me Fame</button>
+		</div>
+		<div id="quote-box">
+			<div id="quote">
+
+			</div>
+			<div id="author">
+				<p></p>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
+	<script src="js/quote-machine.js" charset="utf-8"></script>
+	<script src="https://platform.twitter.com/widgets.js" id="twitter-wjs"></script>
+	<script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>

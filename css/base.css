@@ -1,0 +1,9 @@
+/**
+ * DOM Elements
+ */
+html, body {
+	font-family: monospace;
+	font-size: 1.1em;
+	height: 90%;
+	width: 99%;
+}
