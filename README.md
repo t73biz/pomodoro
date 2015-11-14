@@ -1,6 +1,8 @@
 # Zipline: Build a Pomodoro Clock
 ===
 
+http://codepen.io/t73biz/pen/gaZZgJ
+
 Objective: Build a CodePen.io app that successfully reverse-engineers this: http://codepen.io/GeoffStorbeck/full/RPbGxZ/.
 
 Rule #1: Don't look at the example project's code on CodePen. Figure it out for yourself.
