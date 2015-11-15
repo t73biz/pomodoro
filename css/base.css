@@ -2,8 +2,429 @@
  * DOM Elements
  */
 html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: #000;
+	background-image: url(../images/bg-board.png);
+	color: #3f3;
 	font-family: monospace;
-	font-size: 1.1em;
-	height: 90%;
-	width: 99%;
+	font-size: 1em;
+}
+
+h1 {
+	font-size: 300%;
+	margin-left: .6em;
+	text-shadow: 0 0 .5em #6f6;
+}
+
+h1.rest {
+	color: #2af;
+	text-shadow: 0 0 .5em #2af;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/**
+ * Classes
+ */
+ .adjuster {
+	 text-align: center;
+}
+
+.adjuster span{
+	display: block;
+}
+
+.adjuster .minus,
+.adjuster .plus {
+	border: .25em solid #3f3;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,1);
+	cursor: pointer;
+	margin: .35em;
+	padding: .5em;
+}
+
+.bottom {
+	border-bottom: .75em solid #050;
+	border-left: 1.5em solid transparent;
+	border-right: 1.5em solid transparent;
+	bottom: .25em;
+	float:left;
+	position: relative;
+}
+
+.bottom.rest {
+	border-bottom-color: #2af;
+}
+
+.bottom.work {
+	border-bottom-color: #3f3;
+}
+
+.cluster {
+	float: left;
+	margin: .5em;
+	padding: .25em .5em;
+	width: 6em;
+}
+
+.dot {
+	background-color: #050;
+	border: .5em solid #050;
+	border-radius: 50%;
+	height: .5em;
+	margin-top: 2em;
+	width: .5em;
+ }
+
+ .dot.rest {
+ 	background-color: #2af;
+ 	border-color: #2af;
+ }
+
+ .dot.work {
+ 	background-color: #3f3;
+ 	border-color: #3f3;
+ }
+
+.horizontal {
+	width: 3em;
+}
+
+.amount,
+.label {
+	font-size: 1.5em;
+}
+
+.left {
+	border-bottom: .5em solid transparent;
+	border-left: 1em solid  #050;
+	border-top: .5em solid transparent;
+	clear: left;
+	float: left;
+}
+
+.left.rest {
+	border-left-color: #2af;
+}
+
+.left.work {
+	border-left-color: #3f3;
+}
+
+.middle {
+	border-bottom: 1em solid #050;
+	float: left;
+	left: 1em;
+	position: relative;
+	width: 4em;
+}
+
+.middle:before {
+	content: "";
+	border-top: .5em solid transparent;
+	border-right: 1em solid #050;
+	border-bottom: .5em solid transparent;
+	left: -1em;
+	position: absolute;
+}
+
+
+.middle:after {
+	content: "";
+	border-top: .5em solid transparent;
+	border-left: 1em solid #050;
+	border-bottom: .5em solid transparent;
+	left: 4em;
+	position: absolute;
+}
+
+.middle.rest {
+	border-bottom-color: #2af;
+}
+
+.middle.rest:after {
+	border-left-color: #2af;
+}
+
+.middle.rest:before {
+	border-right-color: #2af;
+}
+
+.middle.work {
+	border-bottom-color: #3f3;
+}
+
+.middle.work:after {
+	border-left-color: #3f3;
+}
+
+.middle.work:before {
+	border-right-color: #3f3;
+}
+
+.right{
+	border-bottom: .5em solid transparent;
+	border-right: 1em solid  #050;
+	border-top: .5em solid transparent;
+	float: right;
+}
+
+.right.rest {
+	border-right-color: #2af;
+}
+
+.right.work {
+	border-right-color: #3f3;
+}
+
+.segment {
+	box-shadow: 0 0 5em .5em rgba(75, 50, 75, 0.3);
+}
+
+/** This should be after .segment to have the box shadow apply without having to use important **/
+.rest {
+	box-shadow: 0px 0px 5em 0.5em rgba(0, 0, 255, 0.4);
+}
+
+.work {
+	box-shadow: 0px 0px 5em 0.5em rgba(75, 255, 75, 0.4);
+}
+
+.seperator {
+	margin: .5em;
+	float: left;
+}
+
+.top {
+	border-top: .75em solid #050;
+	border-left: 1.5em solid transparent;
+	border-right: 1.5em solid transparent;
+	float: left;
+	top: .25em;
+	position: relative;
+}
+
+.top.rest {
+	border-top-color: #2af;
+}
+
+.top.work {
+	border-top-color: #3f3;
+}
+
+.vertical {
+	height: 2em;
+	width: 1em;
+}
+
+/**
+ * Ids
+ */
+
+#clock, #controls, #header {
+	margin: auto;
+	width: 29%;
+}
+
+#controls span {
+	border: .25em solid #3f3;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,1);
+	cursor: pointer;
+	margin: 3.35em;
+	padding: .5em;
+}
+
+.adjuster .minus:hover,
+.adjuster .plus:hover,
+#controls span:hover {
+	background-color: #3f3;
+	border-color: #000;
+	box-shadow: 0px 0px 5em 0.5em rgba(75, 255, 75, 0.4);
+	color: #000;
+}
+
+#controlWrap {
+	margin-top: 12em;
+}
+
+#rest {
+	color: #2af;
+	float: left;
+	left: 30%;
+	position: relative;
+}
+
+#rest .minus,
+#rest .plus {
+	border: .25em solid #2af;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,1);
+	cursor: pointer;
+	margin: .35em;
+	padding: .5em;
+}
+
+#rest .minus:hover,
+#rest .plus:hover {
+	background-color: #2af;
+	border-color: #000;
+	box-shadow: 0px 0px 5em 0.5em rgba(75, 75, 255, 0.4);
+	color: #000;
+}
+
+#work {
+	float: right;
+	right: 30%;
+	position: relative;
+}
+
+#wrap {
+	background-color: rgba(0,0,0,0.7);
+	height: 100%;
+	width: 100%;
+}
+
+#wrap.rest {
+	background-color: rgba(0,0,175,0.7);
+}
+
+@media (max-width: 1024px) {
+	h1 {
+		font-size: 3em;
+	}
+	.adjuster {
+		font-size: .7em;
+	}
+	#clock {
+		font-size: .95em;
+		left: 2%;
+		position: relative;
+	}
+	#controls, #header, #clock {
+		width: 54%;
+	}
+	#controlWrap {
+		margin-top: 10em;
+		text-align: center;
+	}
+	#controls span {
+		margin: 0;
+	}
+	#header {
+		text-align: center;
+	}
+	#rest {
+		left: 10%;
+	}
+	#work {
+		right: 10%;
+	}
+}
+
+@media (max-width: 600px) {
+	h1 {
+		font-size: 1em;
+	}
+	.adjuster {
+		font-size: .7em;
+	}
+	#clock {
+		font-size: .4em;
+		left: 2%;
+		position: relative;
+	}
+	#controls, #header, #clock {
+		width: 54%;
+	}
+	#controlWrap {
+		margin-top: 5em;
+		text-align: center;
+	}
+	#controls span {
+		margin: 0;
+	}
+	#header {
+		text-align: center;
+	}
+	#rest {
+		left: 10%;
+	}
+	#work {
+		right: 10%;
+	}
+}
+
+@media (max-width: 360px) {
+	h1 {
+		font-size: 1em;
+	}
+	.adjuster {
+		font-size: .7em;
+	}
+	#clock {
+		font-size: .4em;
+		left: 2%;
+		position: relative;
+	}
+	#controls, #header, #clock {
+		width: 54%;
+	}
+	#controlWrap {
+		margin-top: 5em;
+		text-align: center;
+	}
+	#controls span {
+		margin: 0;
+	}
+	#header {
+		text-align: center;
+	}
+	#rest {
+		left: 10%;
+	}
+	#work {
+		right: 10%;
+	}
+}
+
+@media (max-width: 320px) {
+	h1 {
+		font-size: 1em;
+	}
+	.adjuster {
+		font-size: .7em;
+	}
+	#clock {
+		font-size: .4em;
+		left: 2%;
+		position: relative;
+	}
+	#controls, #header, #clock {
+		width: 54%;
+	}
+	#controlWrap {
+		margin-top: 5em;
+		text-align: center;
+	}
+	#controls span {
+		margin: 0;
+	}
+	#header {
+		text-align: center;
+	}
+	#rest {
+		left: 10%;
+	}
+	#work {
+		right: 10%;
+	}
 }
