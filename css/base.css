@@ -8,7 +8,7 @@ html, body {
 
 body {
 	background-color: #000;
-	background-image: url(../images/bg-board.png);
+	background-image: url(https://goo.gl/SCgcQZ);
 	color: #3f3;
 	font-family: monospace;
 	font-size: 1em;
@@ -296,17 +296,115 @@ h1.rest {
 #wrap.rest {
 	background-color: rgba(0,0,175,0.7);
 }
-
-@media (max-width: 1024px) {
+@media (min-width: 320px) {
 	h1 {
-		font-size: 3em;
+		font-size: 1em;
 	}
 	.adjuster {
 		font-size: .7em;
 	}
 	#clock {
-		font-size: .95em;
+		font-size: .4em;
 		left: 2%;
+		position: relative;
+	}
+	#controls, #header, #clock {
+		width: 54%;
+	}
+	#controlWrap {
+		margin-top: 5em;
+		text-align: center;
+	}
+	#controls span {
+		margin: 0;
+	}
+	#header {
+		text-align: center;
+	}
+	#rest {
+		left: 10%;
+	}
+	#work {
+		right: 10%;
+	}
+}
+
+@media (min-width: 360px) {
+	h1 {
+		font-size: 1em;
+	}
+	.adjuster {
+		font-size: .7em;
+	}
+	#clock {
+		font-size: .4em;
+		left: 2%;
+		position: relative;
+	}
+	#controls, #header, #clock {
+		width: 54%;
+	}
+	#controlWrap {
+		margin-top: 5em;
+		text-align: center;
+	}
+	#controls span {
+		margin: 0;
+	}
+	#header {
+		text-align: center;
+	}
+	#rest {
+		left: 10%;
+	}
+	#work {
+		right: 10%;
+	}
+}
+
+@media (min-width: 600px) {
+	h1 {
+		font-size: 1em;
+	}
+	.adjuster {
+		font-size: .7em;
+	}
+	#clock {
+		font-size: .4em;
+		left: 19%;
+		position: relative;
+	}
+	#controls, #header, #clock {
+		width: 54%;
+	}
+	#controlWrap {
+		margin-top: 5em;
+		text-align: center;
+	}
+	#controls span {
+		margin: 0;
+	}
+	#header {
+		text-align: center;
+	}
+	#rest {
+		left: 10%;
+	}
+	#work {
+		right: 10%;
+	}
+}
+
+@media (min-width: 1024px) {
+	h1 {
+		font-size: 3em;
+	}
+	.adjuster {
+		font-size: .9em;
+	}
+	#clock {
+		font-size: .95em;
+		left: 13%;
 		position: relative;
 	}
 	#controls, #header, #clock {
@@ -323,108 +421,14 @@ h1.rest {
 		text-align: center;
 	}
 	#rest {
-		left: 10%;
+		left: 30%;
 	}
 	#work {
-		right: 10%;
+		right: 20%;
 	}
 }
-
-@media (max-width: 600px) {
-	h1 {
-		font-size: 1em;
-	}
-	.adjuster {
-		font-size: .7em;
-	}
-	#clock {
-		font-size: .4em;
-		left: 2%;
-		position: relative;
-	}
-	#controls, #header, #clock {
-		width: 54%;
-	}
-	#controlWrap {
-		margin-top: 5em;
-		text-align: center;
-	}
-	#controls span {
-		margin: 0;
-	}
-	#header {
-		text-align: center;
-	}
-	#rest {
-		left: 10%;
-	}
+@media (min-width: 1200px) {
 	#work {
-		right: 10%;
-	}
-}
-
-@media (max-width: 360px) {
-	h1 {
-		font-size: 1em;
-	}
-	.adjuster {
-		font-size: .7em;
-	}
-	#clock {
-		font-size: .4em;
-		left: 2%;
-		position: relative;
-	}
-	#controls, #header, #clock {
-		width: 54%;
-	}
-	#controlWrap {
-		margin-top: 5em;
-		text-align: center;
-	}
-	#controls span {
-		margin: 0;
-	}
-	#header {
-		text-align: center;
-	}
-	#rest {
-		left: 10%;
-	}
-	#work {
-		right: 10%;
-	}
-}
-
-@media (max-width: 320px) {
-	h1 {
-		font-size: 1em;
-	}
-	.adjuster {
-		font-size: .7em;
-	}
-	#clock {
-		font-size: .4em;
-		left: 2%;
-		position: relative;
-	}
-	#controls, #header, #clock {
-		width: 54%;
-	}
-	#controlWrap {
-		margin-top: 5em;
-		text-align: center;
-	}
-	#controls span {
-		margin: 0;
-	}
-	#header {
-		text-align: center;
-	}
-	#rest {
-		left: 10%;
-	}
-	#work {
-		right: 10%;
+		right: 27%;
 	}
 }
