@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Version 0.1 -->
+	<title>Pomodoro Digitale</title>
+	<link rel="stylesheet" href="css/base.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<h1>Pomodoro Digitale</h1>
+		</div>
+		<div class="adjuster" id="rest">
+			<span class="label">Rest</span>
+			<span class="plus">+</span>
+			<span class="amount">5</span>
+			<span class="minus">-</span>
+		</div>
+		<div id="clock">
+			<div class="cluster" id="ten-min">
+				<div class="segment horizontal top"></div>
+				<div class="segment vertical left upper"></div>
+				<div class="segment vertical right upper"></div>
+				<div class="segment horizontal middle"></div>
+				<div class="segment vertical left lower"></div>
+				<div class="segment vertical right lower"></div>
+				<div class="segment horizontal bottom"></div>
+			</div>
+
+			<div class="cluster" id="min">
+				<div class="segment horizontal top"></div>
+				<div class="segment vertical left upper"></div>
+				<div class="segment vertical right upper"></div>
+				<div class="segment horizontal middle"></div>
+				<div class="segment vertical left lower"></div>
+				<div class="segment vertical right lower"></div>
+				<div class="segment horizontal bottom"></div>
+			</div>
+
+			<div class="seperator">
+				<div class="dot"></div>
+				<div class="dot"></div>
+			</div>
+
+			<div class="cluster" id="ten-sec">
+				<div class="segment horizontal top"></div>
+				<div class="segment vertical left upper"></div>
+				<div class="segment vertical right upper"></div>
+				<div class="segment horizontal middle"></div>
+				<div class="segment vertical left lower"></div>
+				<div class="segment vertical right lower"></div>
+				<div class="segment horizontal bottom"></div>
+			</div>
+
+			<div class="cluster" id="sec">
+				<div class="segment horizontal top"></div>
+				<div class="segment vertical left upper"></div>
+				<div class="segment vertical right upper"></div>
+				<div class="segment horizontal middle"></div>
+				<div class="segment vertical left lower"></div>
+				<div class="segment vertical right lower"></div>
+				<div class="segment horizontal bottom"></div>
+			</div>
+		</div>
+		<div class="adjuster" id="work">
+			<span class="label">Work</span>
+			<span class="plus">+</span>
+			<span class="amount">1</span>
+			<span class="minus">-</span>
+		</div>
+		<div id="controlWrap">
+			<div id="controls">
+				<span id="reset">Reset</span>
+				<span id="start">Start</span>
+				<span id="stop">Stop</span>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
+	<script src="js/pomodoro.js" charset="utf-8"></script>
+	<script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>
